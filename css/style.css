@@ -1,0 +1,612 @@
+/* General Settings */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #212529;
+  line-height: 1.5;
+
+  font-size: 16px;
+}
+
+/* headings */
+
+.heading-primary {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+}
+
+.heading-quaternary {
+  font-size: 1.8rem;
+}
+
+/* ----- */
+
+/* utility classes */
+
+.mt-sm {
+  margin-top: 2rem;
+}
+
+.mt-md {
+  margin-top: 4rem;
+}
+
+.mt-lg {
+  margin-top: 8rem;
+}
+
+/* ----- */
+
+/* -------- */
+
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* header */
+
+header {
+  background-color: #fff;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.header {
+  display: flex;
+}
+
+.header__dx {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__item--menu {
+  margin-right: 3rem;
+}
+
+
+.header__logo,
+.navigation__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.header__logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .4rem;
+}
+
+.navigation__link {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.header__hamb-menu {
+  display: none;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header__hamb-menu span {
+  width: 15px;
+  height: 1px;
+  background-color: black;
+}
+
+.header__hamb-menu span:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+/* ----- */
+
+/* Cover section */
+
+.cover {
+  height: 70vh;
+  width: 100%;
+  background-image: url("https://www.helbiz.com/asset/pages/newhome/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----- */
+
+/* section transport  */
+
+.section-transport {
+  margin: 10rem 0;
+}
+
+.transport {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.transport__item {
+  background-color: #fafafa;
+  padding: 6rem 2rem;
+  flex: 0 0 48%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transport__name {
+  width: 35%;
+}
+
+.transport__image {
+  width: 40%;
+}
+
+.btn:link,
+.btn:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 112, 200);
+
+  transition: all .3s;
+}
+
+.btn--link::after {
+  display: inline-block;
+  content:"\203A";
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-left: .7rem;
+  padding-bottom: .3rem;
+}
+
+.btn--link:hover span {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+
+.btn--coming-soon {
+  cursor: default;
+}
+
+/* ----- */
+
+/* section slider */
+
+.section-slider {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.slider__cover {
+  height: 50rem;
+  background-image: url("https://www.helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg");
+  background-size: cover;
+}
+
+.slider__iPhone {
+  position: absolute;
+  width: 40rem;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+
+.slider__steps {
+  padding: 5rem 12rem 10rem 12rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__title,
+.slider__single-step {
+  flex: 0 0 25%;
+}
+
+/* ----- */
+
+/* section mobility  */
+
+.mobility {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.mobility__full-box--1 {
+  background-image: url("https://www.helbiz.com/asset/pages/newhome/images/ScooterHelbiz-2400.jpg");
+  background-size: cover;
+  justify-content: flex-end;
+
+}
+
+.mobility__full-box {
+  height: 50rem;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.mobility__full-box--2 {
+  justify-content: space-between;
+}
+
+.mobility__content {
+  padding: 5rem;
+  flex: 0 0 45%;
+  min-width: 30rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobility__half-box {
+  padding: 5rem;
+  flex: 0 0 48%;
+  height: 50rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobility__half-box--2 {
+  background-image: linear-gradient(#41566A, #252F38);
+}
+
+.mobility__half-box--3 {
+  background-image: url("https://www.helbiz.com/asset/pages/newhome/images/Cities-1500.jpg");
+  background-size: cover;
+}
+
+.mobility__btn-container {
+  display: flex;
+}
+
+.mobility__btn-container > .btn:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.mobility__text {
+  font-weight: 300;
+}
+
+.mobility *.btn {
+  color: currentColor;
+}
+
+.mobility *.btn {
+  color: currentColor;
+}
+
+/* ----- */
+
+/* section family */
+
+.section-family {
+  margin: 5rem 0;
+  height: 45rem;
+  background-image: url("https://www.helbiz.com/asset/pages/newhome/images/Social-Banner.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.family {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  width: 45rem;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.social-list__item i {
+  font-size: 3rem;
+}
+
+/* ----- */
+
+/* footer */
+
+footer {
+  background-color: #000;
+  padding: 10rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer__logo {
+  font-size: 2.5rem;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__lists,
+.footer__social-terms {
+  flex: 0 0 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  flex: 0 0 33.3%;
+  list-style: none;
+}
+
+.footer__list-item {
+  margin-top: .8rem;
+}
+
+.footer__list-link {
+  text-decoration: none;
+  font-weight: 300;
+  color: #696969;
+}
+
+.footer__social {
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+}
+
+.footer__social-list li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.footer__social-terms span {
+  flex: 0 0 33.3%;
+}
+
+.footer__external-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__external-apps a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 50%; /* 1rem = 8px  */
+  }
+
+  .navigation__item--menu {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 0;
+  }
+
+  .header .navigation__list {
+    display: none;
+  }
+
+  .header__hamb-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-primary {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+
+  .heading-quaternary {
+    font-size: 1.6rem;
+  }
+
+  .section-transport {
+    margin: 4rem 0;
+  }
+
+  .transport {
+    flex-direction: column;
+  }
+
+  .transport__item {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .transport__image {
+    width: 20%;
+  }
+
+  .slider__iPhone {
+    width: 30rem;
+    height: auto;
+    transform: translate(-50%, -45%);
+  }
+
+  .slider__steps {
+    padding: 12rem 5rem 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobility__content {
+    flex: 1;
+    padding: 3rem;
+    justify-content: center;
+  }
+
+  .mobility__full-box {
+    flex: 1;
+    align-items: stretch;
+  }
+
+  .mobility__full-box--2 {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .mobility__half-box {
+    padding: 3rem;
+  }
+
+  .family {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem 2rem;
+  }
+
+  footer {
+    padding: 5rem 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 3rem;
+  }
+
+  .footer__lists, .footer__social-terms {
+    width: 100%;
+  }
+
+  .footer__navigation {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+
+  .footer__lists {
+    flex-direction: column;
+  }
+
+  .footer__list:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .footer__social {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__social-terms {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+}
