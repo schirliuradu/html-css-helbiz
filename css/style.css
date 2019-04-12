@@ -70,6 +70,10 @@ header {
   background-color: #fff;
   padding: 0;
   letter-spacing: 1px;
+
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .header {
@@ -94,6 +98,21 @@ header {
 
 .navigation__item--menu {
   margin-right: 3rem;
+}
+
+.navigation__list--lang .navigation__item {
+  padding: 0 1rem;
+  border: 1px solid transparent;
+
+  transition: border .4s;
+}
+
+.navigation__list--lang .navigation__item:not(:last-child) {
+  border-right: 1px solid currentColor;
+}
+
+.navigation__list--lang .navigation__item:hover {
+  border: 1px solid currentColor;
 }
 
 
@@ -147,6 +166,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding-top: 10rem;
 }
 
 .cover__content {
